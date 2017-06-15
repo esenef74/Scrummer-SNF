@@ -1,0 +1,19 @@
+{
+	"name": "Scrummer - SNF",
+	"version": "6.14.2017",
+	"description": "Stan's version of Scrummer",
+	"content_scripts": [
+		{
+      "run_at": "document_end",
+			"matches": ["https://trello.com/*"],
+			"js": ["scrummer.js"],
+			"css": ["scrummer.css"]
+		}
+	],
+	"manifest_version" : 2,
+	"icons": {
+		"48": "img/icon48.png",
+		"128": "img/icon128.png",
+		"1024": "img/icon1024.png"
+	}
+}
